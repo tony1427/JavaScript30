@@ -10,7 +10,7 @@
     <div class="clock">
       <div class="clock-face">
         <div class="hand hour-hand"></div>
-        <div class="hand min-hand"></div>
+        <div class="hand min-hand minute-hand"></div>
         <div class="hand second-hand"></div>
       </div>
     </div>
@@ -64,8 +64,14 @@
       top: 50%;
       transform-origin: 100%;
       transform: rotate(90deg);
-      transition: all 0.05s;
+      /* transition: all 0.05s; */
       transition-timing-function: cubic-bezier(0, 3.36, 0.58, 1);
+    }
+   
+    .minute-hand {
+      width: 40%;
+      background-color: red;
+      margin-left: 31px;
     }
 
   </style>
